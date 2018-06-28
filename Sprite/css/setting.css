@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* 配置间距*/
+/* 配置位置*/
+/* 配置sprite的布局方式*/
+/* vertical/horizontal/diagonal/smart*/
+/* 自动输出尺寸*/
+.setting-sprite, .setting-chuyunhu, .setting-feifeitu, .setting-humei, .setting-longmao, .setting-longxuanfeng, .setting-miaomiao, .setting-team {
+  background-image: url('../images/setting-sc87ecd5bf7.png');
+  background-repeat: no-repeat;
+}
+
+.setting-chuyunhu {
+  background-position: 0 0;
+  height: 64px;
+  width: 64px;
+}
+.setting-chuyunhu:active, .setting-chuyunhu.chuyunhu-active {
+  background-position: -64px 0;
+}
+
+.setting-feifeitu {
+  background-position: -128px 0;
+  height: 64px;
+  width: 64px;
+}
+.setting-feifeitu:active, .setting-feifeitu.feifeitu-active {
+  background-position: 0 -64px;
+}
+
+.setting-humei {
+  background-position: -64px -64px;
+  height: 64px;
+  width: 64px;
+}
+.setting-humei:active, .setting-humei.humei-active {
+  background-position: -128px -64px;
+}
+
+.setting-longmao {
+  background-position: 0 -128px;
+  height: 64px;
+  width: 64px;
+}
+.setting-longmao:active, .setting-longmao.longmao-active {
+  background-position: -64px -128px;
+}
+
+.setting-longxuanfeng {
+  background-position: -128px -128px;
+  height: 64px;
+  width: 64px;
+}
+.setting-longxuanfeng:active, .setting-longxuanfeng.longxuanfeng-active {
+  background-position: 0 -192px;
+}
+
+.setting-miaomiao {
+  background-position: -64px -192px;
+  height: 64px;
+  width: 64px;
+}
+.setting-miaomiao:active, .setting-miaomiao.miaomiao-active {
+  background-position: -128px -192px;
+}
+
+.setting-team {
+  background-position: 0 -456px;
+  height: 200px;
+  width: 200px;
+}
+.setting-team:hover, .setting-team.team-hover {
+  background-position: 0 -256px;
+}
+
+/* 测试此段代码时应将$setting-sprite-dimensions值设为false*/
+/* .test-special {*/
+/* 	@include setting-sprite(compass);*/
+/* 	width: setting-sprite-width(compass);*/
+/* 	height: setting-sprite-height(compass);*/
+/* }*/
